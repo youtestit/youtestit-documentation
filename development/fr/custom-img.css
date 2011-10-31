@@ -1,12 +1,17 @@
 
+.seleniumRC,.seleniumIDE {
+	background-size: contain;
+	margin: auto;
+}
+
 .seleniumRC{
 	background: url("img/seleniumRC.png") no-repeat;
-	height: 120px;
-	width: 80px;
+	height: 400px;
+    width: 550px;
 }
 
 .seleniumIDE{
 	background: url("img/seleniumIDE.png")  no-repeat;
-	height: 120px;
-	width: 80px;
+	height: 400px;
+    width: 330px;
 }
