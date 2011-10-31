@@ -1,0 +1,12 @@
+
+.seleniumRC{
+	background: url("img/seleniumRC.png") no-repeat;
+	height: 120px;
+	width: 80px;
+}
+
+.seleniumIDE{
+	background: url("img/seleniumIDE.png")  no-repeat;
+	height: 120px;
+	width: 80px;
+}
