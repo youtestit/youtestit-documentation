@@ -1,1 +1,9 @@
 /.project
+*.aux
+*.dvi
+*.log
+*.ps
+*.toc
+*.out
+*.pdf
+*.eps
