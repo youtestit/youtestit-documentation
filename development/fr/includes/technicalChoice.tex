@@ -1,0 +1,142 @@
+%===============================================================================
+% Technical Choice
+%===============================================================================
+\newpage{}
+\chapter{les choix techniques}
+
+
+%*******************************************************************************
+\section{Les frameworks :}
+%*******************************************************************************
+
+L'application contient beaucoup d'écrans assez complexe, avec formulaires,
+des diagrammes, composants divers. Pour ce type d'application il est nécessaire
+d'avoir un framework qui aide le développement, et permet une grande productivité.
+
+Le nombre d'utilisateur simultané est assez limité , il n'y a donc pas de raison
+d'utiliser un framework Statless\footnote{Framework donc les pages n'ont pas d’état}.
+
+La framework MVC ne permettent pas une intégration simple et performante de composants
+graphique complexes (diagramme par exemple). Le formulaires et l'ajax reste le gros point
+faible de ces frameworks.
+
+Un framework orienté composants correspondrait d'avantage aux divers problèmes techniques. 
+Ce type de framework facilite énormément la création de formulaires. Ils ont souvent un 
+framework Ajax interne, évitant ainsi l'écriture de code javascript. Ce point est très important
+pour la maintenance de l'application. Mais le point le plus important de ces frameworks est
+la possibilité de découper une application en petites briques réutilisables. Leurs bibliothèques
+de composants facilite la création d'interfaces riches.
+
+
+Il existe différents frameworks composants :
+\begin{itemize}
+	\item \bold{Google GWT :}
+		Très en vogue, mais comporte un problème majeur : sa productivité. GWT permet d'
+		avoir des pages compatible avec la plus part des navigateurs. Pour cela, GWT génère
+		la page entièrement en javascript. Ce  point pose différent  problèmes, comme le fait
+		qu'il est difficile d'appliquer une charte graphique à GWT. Il nécessite également beaucoup
+		de fichiers pour réaliser un composant.
+		\\
+		
+	\item \bold{Tapestry 5 :}
+		C'est un très bon framework, axé sur de la convention, limitant la configuration XML.
+		Il est léger et performant, mais la prise en main est un peu complexe, et peut de développeurs
+		connaissent ce framework.
+		\\
+		
+	\item \bold{Wicket :}
+		Wicket a un très bon système de templating, qui permet d'intégrer rapidement des pages
+		html. Cependant le coté java est rapidement très verbeux. Pour des applications complexe
+		cela peut amener des risques sur la maintenabilité. 
+		\\
+
+	\item \bold{Seam 3 / JSF2 :}
+		Seam et JSF sont devenu les standard de la norme JEE 6. Ce framework facilite énormément
+		l'intégration de formulaires complexes, et possède une collection de composants conséquent. 
+		C'est également l'une des technologie les plus simple pour la création de composant (via les
+		composants composites). Les liaisons entre le frontal, le coeur du framework et la persistance
+		y sont très bien gérées. Cependant beaucoup de développeurs ont des aprioris sur cette technologie.
+		En effet JSF 1.1 et les EJB 2 ont laissé beaucoup de mauvais souvenir. Ce framework est également
+		conçue pour un environnement JEE. Mal-grès les idées reçu Seam et JSF sont des frameworks
+		extrêmement productif, simple et performant. 
+
+\end{itemize}
+
+
+\newpage{}
+Le choix se porte donc sur :
+\begin{itemize}
+	\item \bold{Seam 3 - JEE 6 :}
+		pour sa capacité modulaire, sa faible configuration XML, la capacité de gestion des divers 
+		couches applicatives. De plus c'est un framework reposant sur les standards de la norme JEE.
+		\\
+		
+	\item \bold{JPA 2 :}	
+		Seam a été conçu pour fonctionner avec JPA\footnote{Java Persistence API}. JPA permet la persistance de données, et aide
+		au mapping entre le modèle objet et le modèle relationnelle des bases de données. Sa configuration
+		est essentiellement baser sur des annotations, limitant la configuration XML. Il est également
+		possible de l'associer à Hibernate Search pour les recherches full text ainsi que la
+		JSR-303\footnote{Validation par annotations} bean
+		validator pour la validation des formulaires. JPA et JSF 2 sont totalement compatible avec 
+		la validations par annotations (JSR-303).
+		\\
+		
+	\item \bold{JAX-RS :} pour les services REST de l'application.
+		\\
+		
+	\item \bold{JSF 2 :}
+		Ce framework  permet un templating et un découpage par composants. Cette technologie est très 
+		productive pour tout ce qui touche aux formulaires et permet un intégration élégante
+		d'Ajax. Le projet Facelets y a été intégré nativement, ce qui permet la conception 
+		de Layout, et d'héritage entre différent layouts. De plus cette technologie fait
+		partie intégrante de la norme JEE 6.
+		\\
+			    			
+	\item \bold{ Richfaces 4 / Primefaces 3 :}
+		Ce tandem de bibliothèque de composants est conçu pour fonctionner ensemble. Primefaces
+		apporte énormément de composants (diagramme, upload en html 5, etc...). Richfaces apporte
+		toutes la parties abstraction Ajax, qui permet d'avoir des composants riches sans que l'on ait 
+		besoin d'écrire de code javascript. La maintenance en est considérablement améliorée. 
+		\\
+				
+	\item \bold{PostgreSQL :}	 C'est la base de données Open Source la plus performante.
+		\\
+			
+	\item \bold{JBoss 7 :}
+		JBoss ont fait énormément d'optimisation sur leur serveur d'application,  principalement
+		sur l'utilisation multi-coeurs des processeurs. Il est également un serveur compatible avec la
+		norme JEE 6, ainsi que l'implémentation de référence pour le class loader (JBoss Weld).
+		\\
+
+		
+	\item \bold{HTML 5 :}
+		Pour profiter au maximum des composants de primefaces, l'application se doit d'être en
+		HTML 5, de plus il faut respecter un maximum l'ergonomie et l'accessibilité. 
+		\\
+						
+	\item \bold{JBoss cache / Ehcache :}
+		Seam permet une optimisation via l'utilisation du cache JBoss. Ce cache permet d'utiliser
+		différente implémentation. Ehcache permet une grande finesse de configuration. Seam
+		permet également d'utiliser Ehcache dans les templates JSF.
+\end{itemize}
+
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Environnement systèmes :}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\subsection{Packaging}
+L'environnement nécessaire au fonctionnement de l'application reste assez classique, 
+elle nécessite un serveur d'application ou conteneur de servlets. Toute fois. Les applications
+JEE 6 peuvent aussi bien être sous forme d'EAR\footnote{Enterprise Application ARchive}   ou de 
+WAR\footnote{Web Application ARchive}.
+
+Dans un premier temps \youTestIt{} sera sous forme de WAR, une version EAR sera conçu ultérieurement.
+
+
+\subsection{Le serveur}
+Le serveur de référence est JBoss 7 (7.0.2.Final ou supérieur en packaging \textbf{Everything}). 
+Le serveur se doit de rester standard et avec un minium de configuration (configuration de la data
+source reste nécessaire).
+

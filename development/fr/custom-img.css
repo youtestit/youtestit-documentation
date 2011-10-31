@@ -2,6 +2,7 @@
 .seleniumRC,.seleniumIDE {
 	background-size: contain;
 	margin: auto;
+	margin-top: 14px;
 }
 
 .seleniumRC{
