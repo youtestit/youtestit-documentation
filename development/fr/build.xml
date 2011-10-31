@@ -1,0 +1,21 @@
+<project name="youtestit-doc-dev-fr" default="deploy" basedir=".">
+
+
+	<!--========================================================================
+    =                              PROPERTIES
+    =========================================================================-->
+	<property name="build.properties" value="build.properties" />
+	
+	
+	<!--========================================================================
+    =                              TARGETS
+    =========================================================================-->
+	
+	<target name="deploy" description="deploy web site">
+		<replace dir="${basedir}/youtestit-development-fr" replacefilterfile="build.properties">
+		      <include name="**/*.html" />
+		</replace>
+	</target>
+	
+
+</project>
