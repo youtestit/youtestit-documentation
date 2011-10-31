@@ -56,3 +56,32 @@ nécessaire pour effectuer l'ensemble de ces tests sera considérablement rédui
 	\item \positif{}  Évite les régressions, extrêmement important dans le cadres de TMA.
 	\item \positif{}  Améliore la relation clients (participation à la création des tests et ou meilleur vision de la qualité du projet)
 \end{description}
+
+
+%===============================================================================
+% Qu'est-ce que Selenium
+%===============================================================================
+\section{Qu'est-ce que Selenium}
+Pour comprendre d'avantage le fonctionnement de \youTestIt{}, il faut comprendre qu'est-ce que
+c'est que les tests Selenium.
+
+Selenium est un outils qui permet d'effectuer des tests sur l'interface d'une application Web. Il 
+est divisé en deux parties :
+\begin{itemize}
+	\item \bold{Selenium IDE :}
+		C'est un plugin pour Firefox permettant de concevoir les tests. Lors qu'Il est actif il enregistre
+		les différentes actions que réalise un utilisateur sur le navigateur.
+		\img{0.3}{seleniumIDE}{seleniumIDE}{Interface de Selenium IDE}
+		
+	\item \bold{Selenium RC:}
+		Selenium RC permet d'exécuter des tests Selenium en dehors du plugin firefox. C'est réellement une
+		application Java à l'intérieur d'un serveur Jetty qui interprète les différentes commandes Selenium.
+		Dans une plateforme d'intégration continue c'est Selenium RC qui est chargé d'effectuer les tests.
+		Selenium RC permet également de distribuer l'exécutions des tests sur divers machines. Cependant
+		la configuration du Hub\footnote{Le Hub Selenium est le serveur Selenium RC principal dédié à la gestion
+		des autres machines.} et des différents nodes\footnote{Les différentes machines liées au Hub Selenium sont
+		nommées nodes, ou nœud en français.} se fait en ligne de commandes. Cela demande donc quelques notions
+		d'aministration système.
+ 		\img{0.4}{seleniumRC}{seleniumRC}{Selenium Remote control}
+ 		
+\end{itemize}
