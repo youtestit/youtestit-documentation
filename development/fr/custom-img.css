@@ -1,18 +1,19 @@
 
 .seleniumRC,.seleniumIDE {
-	background-size: contain;
 	margin: auto;
 	margin-top: 14px;
 }
 
 .seleniumRC{
 	background: url("img/seleniumRC.png") no-repeat;
+	width: 550px;
 	height: 400px;
-    width: 550px;
+    background-size: 550px 400px;
 }
 
 .seleniumIDE{
 	background: url("img/seleniumIDE.png")  no-repeat;
-	height: 400px;
-    width: 330px;
+	width: 330px;
+	height: 356px;
+    background-size: 330px 356px;
 }
