@@ -1,0 +1,94 @@
+\ProvidesPackage{versioning}
+
+\RequirePackage{ifthen}
+\RequirePackage{calc}
+\RequirePackage{array}
+
+% numero de version majeur
+\newcounter{versionmajor}
+
+% numero de version mineur qui reviens à zéro quand la majeur
+% s'incrémente
+\newcounter{versionminor}[versionmajor]
+
+% used to now if we can user major and minor
+\newboolean{@inVersion}
+
+% redefinition de l'affichage des version
+\renewcommand{\theversionmajor}{\arabic{versionmajor}.\arabic{versionminor}}
+\renewcommand{\theversionminor}{\arabic{versionmajor}.\arabic{versionminor}}
+
+% creation d'un pseudo-compteur de version
+\newcommand{\@theversion}{\theversionmajor}
+
+\newcolumntype{C}[1]
+{@{}>{\centering\arraybackslash}m{#1}@{}}
+% definition de l'environnement permettant de définir les version
+\newenvironment{versioning}
+{
+\setcounter{versionmajor}{0}%
+\setcounter{versionminor}{0}%
+\setboolean{@inVersion}{true}%
+\begin{center}
+\noindent\tabular
+{|C{0.15\textwidth}|C{0.15\textwidth}|C{0.2\textwidth}|C{0.5\textwidth-5\arrayrulewidth}|}%
+\hline
+\textbf{Version}&
+\textbf{Date}&
+\textbf{Auteur}&
+\textbf{Commentaires}\\
+\hline%
+}{%
+\endtabular%
+\end{center}
+\setboolean{@inVersion}{false}%
+}
+
+% used for the document version in the preambule
+\newcommand{\@documentversion}{}
+\newcommand{\setversion}[1]{\renewcommand{\@documentversion}
+{#1}}
+
+% used to write the table of version
+\newcommand{\makeversioning}[1][Suivi des versions]{
+\chapter*{#1}
+\begin{versioning}
+\@documentversion
+\end{versioning}
+\@setlastversion
+\global \let \makeversioning \relax%
+}
+% definition de la commande version permetant de mettre une entrée dans
+% les versions
+\newcommand{\@version}[4][]
+{%
+\ifthenelse{\boolean{@inVersion}}%
+{}{%
+\PackageError{version}%
+{You're not in a versioning environment or in the setversion command}%
+{Insert your code in a versioning environment or in the setversion command}%
+}%
+\@theversion\label{#1} & #2 & #3 & #4 \\%
+\hline
+}
+
+\newcommand{\@setlastversion}{%
+\@bsphack\protected@write
+\@auxout
+{}
+{\string\newlabel{lastVersion}{{\@theversion}{\thepage}{last version}{versionmajor.\arabic{versionmajor}}{}}}
+\@esphack
+}
+
+% creation d'un pseudo-compteur de dernière version
+\newcommand{\thelastversion}{\ref{lastVersion}}
+
+% definition de la commande major permettant de décrire une version majeure
+\newcommand{\major}[4][]
+{\refstepcounter{versionmajor}%
+\@version[#1]{#2}{#3}{#4}}
+
+% definition de la commande minor permettant de décrire une version mineure
+\newcommand{\minor}[4][]
+{\refstepcounter{versionminor}%
+\@version[#1]{#2}{#3}{#4}}

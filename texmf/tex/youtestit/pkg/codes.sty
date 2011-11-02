@@ -1,0 +1,16 @@
+\RequirePackage{listings}
+
+\newcommand{\lstlatexlisting}[2][]{
+\lstinputlisting[frame=single,
+extendedchars=true,
+language=TeX,
+breaklines=true,
+commentstyle=\ttfamily\it,
+identifierstyle=\ttfamily,
+stringstyle=\ttfamily,
+keywordstyle=\ttfamily,
+basicstyle=\ttfamily\color{black},#1]{#2}
+}
+
+\newcommand{\environment}[1]{\texttt{#1}}
+

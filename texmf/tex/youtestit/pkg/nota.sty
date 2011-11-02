@@ -1,0 +1,56 @@
+\ProvidesPackage{nota}
+
+\RequirePackage{ifthen}
+\RequirePackage{calc}
+\RequirePackage{graphicx}
+
+\newlength{\@notaPadding}
+\newlength{\@notaWidth}
+\newlength{\@notaHeight}
+\newlength{\@notaLineWidth}
+\newlength{\@notaSpace}
+\newlength{\@notaSkip}
+\setlength{\@notaSkip}{0.5\baselineskip plus 0.25\baselineskip minus 0.25\baselineskip}%
+
+%params :
+%  - image
+%  - width
+%  - heigth
+\newenvironment{nota}[5]
+{\vspace{\@notaSkip}%
+\setlength{\@notaWidth}{#2}%
+\setlength{\@notaHeight}{#3}%
+\setlength{\@notaSpace}{0.5em +{#4}}%
+\setlength{\@notaPadding}{\@notaWidth + \@notaSpace}%
+\setlength{\@notaLineWidth}{\textwidth - \@notaPadding}%
+\setlength{\fboxsep}{0pt}%
+\newcommand{\@defaultLineIndent}{\@notaPadding\@notaLineWidth}
+\parshape=3%
+\@defaultLineIndent%
+\@defaultLineIndent%
+0pt\textwidth%
+\noindent%
+\raisebox{-\@notaHeight+2ex-{#5}}[0pt][0pt]{%
+\makebox[0pt][r]{%
+\includegraphics[width=\@notaWidth,height=\@notaHeight]{#1}%
+\hspace*{\@notaSpace}%
+}%
+}%
+\ignorespaces}
+{\vspace{\@notaSkip}\par}
+
+\newenvironment{attention}{
+\bf%
+\begin{nota}{attention}{2.7\baselineskip}{2.5\baselineskip}{0em}{0ex}%
+}
+{\end{nota}}
+
+\newenvironment{note}{
+\it%
+\begin{nota}{note}{3pt}{3pt}{4em}{5ex}%
+}
+{\end{nota}}
+
+
+
+

@@ -1,0 +1,360 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{youtestitdesign}
+
+% define margins
+\RequirePackage{geometry}
+\geometry{a4paper,top=25mm,bottom=55mm,left=10mm,right=10mm}
+
+% use youtestit's colors
+\RequirePackage{youtestitcolor}
+
+% use calculation
+\RequirePackage{ifthen}
+\RequirePackage{calc}
+
+% for backbround design
+\RequirePackage{eso-pic}
+
+% header and foot
+\RequirePackage{graphicx}
+\RequirePackage{fancyhdr}
+
+% redefine titles
+\RequirePackage{titlesec}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      design variables      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% the indentation for paragraph indentation
+\setlength{\parindent}{2em plus 0.5em minus 0.5em}
+% the vertical space between two paragraphs
+\setlength{\parskip}{2ex plus 0.5ex minus 0.5ex}
+
+% the width of the top first rule
+\newlength{\@youtestitFirstRuleLength}
+\setlength{\@youtestitFirstRuleLength}{0.1mm}
+
+% the width of the top second rule
+\newlength{\@youtestitSecondRuleLength}
+\setlength{\@youtestitSecondRuleLength}{1cm}
+
+% the width of the bottom rule
+\newlength{\@youtestitThirdRuleLength}
+\setlength{\@youtestitThirdRuleLength}{0.2cm}
+
+% the size of the youtestit's logo
+\newlength{\@youtestitLogoLength}
+\setlength{\@youtestitLogoLength}{1.5cm}
+
+% the size of the header
+\newlength{\@youtestitHeaderLength}
+\setlength{\@youtestitHeaderLength}{\@youtestitLogoLength}
+\addtolength{\@youtestitHeaderLength}{14.5pt}
+
+% the distance between rule and text for chapterss
+\newlength{\@chapterRuleDistance}
+\setlength{\@chapterRuleDistance}{10\p@}
+
+% width of the chapter's rule
+\newlength{\@chapterRuleHeight}
+\setlength{\@chapterRuleHeight}{1\p@}
+
+% the vertical skip before text
+\setlength{\headsep}{5ex}
+\newlength{\@chapterVerticalSkipBefore}
+\setlength{\@chapterVerticalSkipBefore}{5ex}
+
+% the vertical skip after chapter
+\newlength{\@chapterVerticalSkipAfter}
+\setlength{\@chapterVerticalSkipAfter}{10ex}
+
+% true if we are in the front
+\newboolean{front}
+\setboolean{front}{false}
+
+% true if we use versioning
+\newboolean{versioning}
+\setboolean{versioning}{true}
+
+% mark the last page
+\AtEndDocument{\label{lastpage}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       package options      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareOption{noversion}{\setboolean{versioning}{false}}
+\ProcessOptions\relax
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        user's fields       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% the phone number
+\newboolean{telSet}
+\setboolean{telSet}{false}
+\newcommand{\@tel}{}
+\newcommand{\tel}[1]{
+\renewcommand{\@tel}{#1}
+\setboolean{telSet}{true}
+}
+
+% the fax number
+\newboolean{faxSet}
+\setboolean{faxSet}{false}
+\newcommand{\@fax}{}
+\newcommand{\fax}[1]{
+\renewcommand{\@fax}{#1}
+\setboolean{faxSet}{true}
+}
+
+% the email address
+\newboolean{mailSet}
+\setboolean{mailSet}{false}
+\newcommand{\@mail}{}
+\newcommand{\mail}[1]{
+\renewcommand{\@mail}{#1}
+\setboolean{mailSet}{true}
+}
+
+% youtestit's address
+\newcommand{\@address}{}
+\newcommand{\@townaddress}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     youtestit's page design    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% no off set on the top of the page
+\fancyhfoffset{0cm}
+
+% start the design
+\fancypagestyle{youtestit}{%
+
+% clear all header and footer fields
+\fancyhf{}
+
+%set the header height
+\setlength{\headheight}{\@youtestitHeaderLength}
+
+% the head rule is orange and 0.2mm width
+\renewcommand{\headrulewidth}{0.2mm}
+\renewcommand{\headrule}{%
+{{\color{youtestitTopRules}{\rule{\textwidth}{\headrulewidth}}}}}
+
+% the foot rule is the same
+\renewcommand{\footrulewidth}{0.2mm}
+\renewcommand{\footrule}{%
+{{\color{youtestitTopRules}{\rule{\textwidth}{\footrulewidth}\\}}}
+}
+
+% define the backbround
+\AddToShipoutPicture{%
+% the first rule on the top of the page. Need to raise it to be on the top.
+\raisebox{\paperheight - \@youtestitFirstRuleLength}{%
+\newline%
+}%
+% the second need to be raised too just under the first on. Horizontal
+% % translation is needed to forget last rule
+\raisebox{\paperheight - \@youtestitFirstRuleLength - \@youtestitSecondRuleLength}{%
+\includegraphics[height=1.7cm]{top}%
+\newline%
+}%
+% the last rule need a horizontal translation to forget last rule
+\hspace{-\paperwidth}%
+\hspace{-2cm}%
+\color{youtestitTopRules}\rule{\paperwidth}{\@youtestitThirdRuleLength}%
+}
+
+\fancyhead[LO,RE]{%
+{\sc\large\color{youtestitTitle}\leftmark}
+}
+
+\fancyhead[RO,LE]{%
+\includegraphics[height=\@youtestitLogoLength]{youtestit}%
+}
+
+\fancyfoot[L]{%
+\footnotesize%
+\color{youtestitFooter}%
+%
+\begin{minipage}{0.32\textwidth}%
+\href{http://www.youtestit.org}{www.youtestit.org}
+\end{minipage}%
+%
+\hfill%
+%
+\begin{minipage}{0.32\textwidth}%
+\end{minipage}%
+%
+\hfill%
+%
+\begin{flushright}%
+\ifthenelse{\boolean{front}}%
+{\textbf{\thepage}}
+{\textbf{\thepage/\pageref{lastpage}}}%
+\end{flushright}%
+}
+
+}
+
+% use the style we just defined
+\pagestyle{youtestit}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       section design       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% when a new chapter start, mark it
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+% don't write table of contents' name in upper case
+\renewcommand{\tableofcontents}{
+\if@twocolumn \@restonecoltrue \onecolumn \else \@restonecolfalse \fi
+\chapter*{\contentsname \@mkboth {\contentsname}{\contentsname}}
+\@starttoc {toc}\if@restonecol \twocolumn \fi
+}
+
+% chapter page used youtestit's page also
+\renewcommand{\chapter}{%
+\if@openright \cleardoublepage \else \clearpage \fi%
+\secdef \@chapter \@schapter%
+}
+
+% design of normal chapter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{\@chapterVerticalSkipBefore}%
+{\raggedright \Huge \bfseries \color{youtestitTopRules}%
+\thechapter \quad #1%
+\vspace*{\@chapterRuleDistance}%
+\hrule height \@chapterRuleHeight%
+}%
+\vspace*{\@chapterVerticalSkipAfter}%
+}
+
+% design for stared chapters
+\renewcommand{\@makeschapterhead}[1]{%
+\vspace*{\@chapterVerticalSkipBefore}%
+{\centering \Huge \bfseries \color{youtestitTopRules}%
+\hrule height \@chapterRuleHeight%
+\vspace*{\@chapterRuleDistance}%
+\vspace*{-\parskip}%
+#1%
+\vspace*{\@chapterRuleDistance}%
+\hrule height \@chapterRuleHeight%
+}%
+\vspace*{\@chapterVerticalSkipAfter}%
+}
+
+% design for sections
+\renewcommand{\section}{
+\@startsection {section}{1}
+{0.5\parindent}
+{2.5ex  \@plus .5ex \@minus .5ex}
+{2.5ex  \@plus .5ex \@minus .5ex}
+{\color{youtestitTitle} \normalfont \Large \bfseries}
+}
+
+% design for subsection
+\renewcommand{\subsection}{
+\@startsection {subsection}{2}
+{\parindent}
+{2ex \@plus .5ex \@minus .5ex}
+{2ex \@plus .5ex \@minus .5ex}
+{\color{youtestitTitle!75!black} \normalfont \large \bfseries}
+}
+
+% design for subsubsection
+\renewcommand{\subsubsection}{
+\@startsection {subsubsection}{3}
+{1.5\parindent}
+{1.5ex \@plus .5ex \@minus .5ex}
+{1.5ex \@plus .5ex \@minus .5ex}
+{\color{youtestitTitle!50!black} \normalfont \normalsize \bfseries}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        front design        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% the front use roman numbering
+\newcommand{\startyoutestitfront}{
+\pagenumbering{roman}
+\setboolean{front}{true}
+}
+
+% the content used arabic numbering
+\newcommand{\stopyoutestitfront}{
+\newpage
+\pagenumbering{arabic}
+\setboolean{front}{false}
+}
+
+% 3 levels max in the toc
+\setcounter{secnumdepth}{3}
+
+% A sommaire is at the begining of a document
+\newcommand{\sommaire}{
+\let\contentsnameORG\contentsname
+\renewcommand{\contentsname}{Sommaire}
+\tableofcontents
+\renewcommand{\contentsname}{\contentsnameORG}
+}
+
+%title page
+\renewcommand{\maketitle}{
+\begin{titlepage}%
+\begin{flushleft}
+ \includegraphics[height=2cm]{youtestit}%
+\end{flushleft}
+\vfill
+\begin {center}%
+{\color{youtestitTitle}\bfseries \Huge \@title \par}%
+\ifthenelse{\boolean{versioning}}%
+{\vskip 3em%
+{\color{youtestitTopRules}\bfseries\Large Version \ref{lastVersion} \par}}%
+{}%
+\end{center}%
+\vfill\vfill
+{%
+\newsavebox{\@partLeft}
+\savebox{\@partLeft}{
+\begin{minipage}{0.45\textwidth}%
+\color{youtestitTopRules}%
+\hspace{0.75cm}
+\begin{tabular}[t]{l}
+\href{http://www.youtestit.org}{www.youtestit.org}\\
+\href{https://github.com/youtestit}{https://github.com/youtestit}\\
+Licensed under the \href{http://www.apache.org/licenses/LICENSE-2.0.txt}{Apache licence, Version 2.0}\\
+\end{tabular}
+\end{minipage}
+}
+\usebox{\@partLeft}
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\begin{center}
+  %% can be use in future %%
+\hspace*{0.75cm}
+\end{center}
+\end{minipage}
+}
+\end{titlepage}%
+\global \let \maketitle \relax%
+\global \let \@title \@empty%
+\global \let \title \relax%
+\global \let \author \relax%
+\global \let \date \relax%
+\global \let \and \relax%
+}
+
+% the default front contains title page, versioning and sommaire
+\newcommand{\makefront}{
+\startyoutestitfront
+\maketitle
+\ifthenelse{\boolean{versioning}}%
+{\makeversioning}%
+{}%
+\sommaire
+\stopyoutestitfront
+}

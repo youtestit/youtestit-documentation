@@ -1,0 +1,108 @@
+\ProvidesPackage{system}
+
+\RequirePackage{listings}
+\RequirePackage{youtestitcolor}
+\RequirePackage{calc}
+
+
+\newlength{\@framesep}
+\setlength{\@framesep}{3pt}
+\newlength{\@numbersep}
+\setlength{\@numbersep}{\@framesep + 5pt}
+
+\definecolor{colKeys}{rgb}{0,0,1} 
+\definecolor{colIdentifier}{rgb}{0,0,0} 
+\definecolor{colComments}{rgb}{0,0.5,1} 
+\definecolor{colString}{rgb}{0.6,0.1,0.1} 
+
+
+% design general command
+\newcommand{\commandset}[1][]
+{
+\lstset{
+framesep=\@framesep,
+xleftmargin=\@framesep,
+xrightmargin=\@framesep,
+numbersep=\@numbersep,
+breaklines=true,
+language=bash,
+frame=single,
+frameround=ffff,
+numbers=left,
+captionpos=b,
+numberstyle=\tiny,
+commentstyle=\ttfamily\it,
+identifierstyle=\ttfamily,
+stringstyle=\ttfamily,
+keywordstyle=\ttfamily,
+basicstyle=\ttfamily\color{black},
+backgroundcolor=\color{youtestitSubTitle!10},
+#1
+}
+}
+
+
+
+
+% nothing special for user's command
+\lstnewenvironment{usercommand}[1][]
+{\commandset[#1]{}}
+{}
+
+\lstnewenvironment{codeJava}[1][]
+{
+\lstset{
+framesep=\@framesep,
+xleftmargin=\@framesep,
+xrightmargin=\@framesep,
+numbersep=\@numbersep,
+breaklines=true,
+language=java,
+frame=single,
+frameround=ffff,
+numbers=left,
+captionpos=b,
+identifierstyle=\color{colIdentifier}, % 
+keywordstyle=\color{colKeys}, % 
+stringstyle=\color{colString}, % 
+commentstyle=\it\color{colComments},
+basicstyle=\ttfamily\color{black},
+backgroundcolor=\color{youtestitSubTitle!10}}
+{}}
+{}
+
+
+
+
+\lstnewenvironment{codeXml}[1][]
+{
+\lstset{
+framesep=\@framesep,
+xleftmargin=\@framesep,
+xrightmargin=\@framesep,
+numbersep=\@numbersep,
+breaklines=true,
+language=xml,
+frame=single,
+frameround=ffff,
+numbers=left,
+captionpos=b,
+identifierstyle=\color{colIdentifier}, % 
+keywordstyle=\color{colKeys}, % 
+stringstyle=\color{colString}, % 
+commentstyle=\it\color{colComments},
+basicstyle=\ttfamily\color{black},
+backgroundcolor=\color{youtestitSubTitle!10}}
+{}}
+{}
+
+% color in red root's commands
+\lstnewenvironment{rootcommand}[1][]
+{\commandset[rulecolor=\color{red},numberstyle=\tiny\color{red},backgroundcolor=\color{red!10},#1]{}}
+{}
+
+\newcommand{\filename}[1]{\texttt{#1}}
+
+\newcommand{\ext}[1]{\texttt{#1}}
+
+\newcommand{\command}[1]{\textbf{#1}}

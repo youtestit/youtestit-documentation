@@ -1,0 +1,10 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{slide}
+
+\newenvironment{slide}
+  {\begin{frame}{\secname}}
+  {\end{frame} }
+
+\newenvironment{slideCode}
+  {\begin{frame}[containsverbatim]{\secname} }
+  {\end{frame} }
