@@ -67,13 +67,23 @@ c'est que les tests Selenium.
 
 Selenium est un outils qui permet d'effectuer des tests sur l'interface d'une application Web. Il 
 est divisé en deux parties :
-\begin{itemize}
-	\item \bold{Selenium IDE :}
+
+\textbf{Selenium IDE}
+
 		C'est un plugin pour Firefox permettant de concevoir les tests. Lors qu'Il est actif il enregistre
 		les différentes actions que réalise un utilisateur sur le navigateur.
-		\img{0.3}{seleniumIDE}{seleniumIDE}{Interface de Selenium IDE}
+		\begin{figure}[!h]
+     		\begin{center}
+			      \includegraphics[width=0.3\textwidth]{seleniumIDE}
+			      \caption{Interface de Selenium IDE}
+			      \label{seleniumIDE}
+		    \end{center}
+		\end{figure}		
 		
-	\item \bold{Selenium RC:}
+
+\newpage
+\textbf{Selenium RC}
+
 		Selenium RC permet d'exécuter des tests Selenium en dehors du plugin firefox. C'est une
 		application Java à l'intérieur d'un serveur Jetty qui interprète les différentes commandes Selenium.
 		Dans une plateforme d'intégration continue c'est Selenium RC qui est chargé d'effectuer les tests.
@@ -84,7 +94,7 @@ est divisé en deux parties :
 		d'aministration système.
  		\img{0.4}{seleniumRC}{seleniumRC}{Selenium Remote control}
  		
-\end{itemize}
+
 
 Ces outils permettent une première approche vis à vis des tests d'intégration. Leurs intégrations n'est pas simple, elle nécessite une bonne connaissance en Maven\footnote{Maven est une application gérant la compilation d'application Java} et
 en administration système. 
