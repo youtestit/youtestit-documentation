@@ -73,7 +73,7 @@ On retrouve cinq fichiers de configuration :
 				\item définisser la nouvelle configuration comme configuration par défaut (\textbf{Set as Default})
 				\item A présent pour chaque projet importer il faut aller sans sa configuration 
 							(clique droit sur le projet$\rightarrow$Properties )
-				\item Dans le menu Checks	tyle il faut choisir la configuration  \youTestIt{} et valider le formulaire.
+				\item Dans le menu Checkstyle  il faut choisir la configuration  \youTestIt{} et valider le formulaire.
 		\end{enumerate}
 	
 
@@ -103,14 +103,66 @@ fonctionnel.
 	\item créer un dossier dans votre home (par exemple : /home/yourLogin/git ). Ce dossier contiendra
 	 l'ensemble des sources du projet.
 	 
+	\item Il faut ensuite cloner tous les projets dans ce dossier
+	 \lstsetSh{}
+	 \lstinputlisting{includes/src/gitClone.sh}
+	 
 	 \item Le plugin EGit fonctionne très mal avec la librairie SSH d'eclipse, il faut impérativement lui
 	 ordonner de travailler avec la librairie système. Pour cela il faut  crée un script shell pour le lancement
 	 d'éclispe qui va initialiser les bonnes variables d'environnement.
 	 
 	 \lstsetSh{}
 	 \lstinputlisting{includes/src/eclipse.sh}
-	On en profite également pour spécifier l'emplacement de maven et du JDK
+	On en profite également pour spécifier l'emplacement de maven et du JDK.
+	\newpage
 
+	 \item Une fois eclipse démarrer on va pouvoir récupérer nos dépôt git. Dans la perspective
+	 Git repository exploring, on peut rajouter un dépôt en cliquant sur l'icone avec un + vert.
+		\begin{figure}[!h]
+     		\begin{center}
+			      \includegraphics[width=0.5\textwidth]{gitAdd}
+			      \caption{Ajout d'un dépôt Git}
+			      \label{gitAdd}
+		    \end{center}
+		\end{figure}
+		
+	 \item Une nouvelle fenêtre s'ouvre dans la quel on va pouvoir aller chercher  l'emplacement du
+	 dépôt Git locale. Le bouton "seach" permet au plugin d'aller récupérer le .git du dépôt. Il ne 
+	 reste plus qu'à valider le formulaire.
+		\begin{figure}[!h]
+     		\begin{center}
+			      \includegraphics[width=0.5\textwidth]{gitRepo}
+			      \caption{Récupération des dépôt Git}
+			      \label{gitAddRepo}
+		    \end{center}
+		\end{figure}	
+		\newpage
+	 
+	 \item Git a besoin d'une connexion SSH avec une clé RSA pour fonctionner. Il faut
+	 bien vérifier que la configuration eclipse pour SSH est correcte et qu'elle contient
+	 bien la clé RSA.
+		\begin{figure}[!h]
+     		\begin{center}
+			      \includegraphics[width=0.5\textwidth]{sshParams}
+			      \caption{Configuration SSH d'eclipse}
+			      \label{eclipseSshConfig}
+		    \end{center}
+		\end{figure}		 
+	 
+	\item Une fois la configuration terminée, vous pouvez importer les projets en tant que "general project" .
+	Pour cela il suffit de déplier le dépôt et de faire un clique droit sur le "Working directory" .
+		\begin{figure}[!h]
+     		\begin{center}
+			      \includegraphics[width=0.5\textwidth]{importProject}
+			      \caption{Importation d'un projet}
+			      \label{gitProjectImport}
+		    \end{center}
+		\end{figure}	
+		
+	\item Votre environnement est prêt à faire de pull et push ;)   Pour plus  d'information je vous invite à lire la
+	documentation du plugin Egit : \href{http://wiki.eclipse.org/EGit/User\_Guide}{http://wiki.eclipse.org/EGit/User\_Guide} . 
+ 
+	 
 \end{enumerate}
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
