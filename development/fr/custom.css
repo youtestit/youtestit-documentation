@@ -1,0 +1,63 @@
+
+/*******************************************************************************
+* CUSTOM
+*******************************************************************************/
+
+.Capture-3{
+	background: url("images/imgs/Capture-3.png");
+}
+
+
+.gitAdd{
+	background: url("images/imgs/gitAdd.png");
+	height: 189px;
+    width: 529px;
+}
+
+
+.gitRepo{
+	background: url("images/imgs/gitRepo.png");
+	background-size: 362px auto;
+    height: 376px;
+    width: 361px;
+}
+
+
+.importProject{
+	background: url("images/imgs/importProject.png");
+	width: 615px;
+}
+
+
+.interface-home-project{
+	background: url("images/imgs/interface-home-project.png");
+}
+
+
+.interface-home-test{
+	background: url("images/imgs/interface-home-test.png");
+}
+
+
+.seleniumIDE{
+	background: url("images/imgs/seleniumIDE.png");
+	background-size: 370px auto;
+    height: 400px;
+    width: 371px;
+}
+
+
+.seleniumRC{
+	background: url("images/imgs/seleniumRC.png");
+	background-size: 601px auto;
+    height: 389px;
+    width: 600px;
+}
+
+
+.sshParams{
+	background: url("images/imgs/sshParams.png");
+	background-size: 570px auto;
+    height: 464px;
+    width: 569px;
+}
