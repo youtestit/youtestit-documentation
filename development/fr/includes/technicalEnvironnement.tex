@@ -40,17 +40,17 @@ présent dans le projet.
 
 On retrouve cinq fichiers de configuration :
 \begin{itemize}
-	\item  \textbf{cleanups.xml :}  Se configure dans :
-				  preferences $\rightarrow$ Java $\rightarrow$Code Style$\rightarrow$Clean up
+	\item  \textbf{cleanups.xml :}  Se configure dans : ((\leftArrow{}))
+				  preferences \rightArrow{} Java \rightArrow{}Code Style\rightArrow{}Clean up
 
 	\item \textbf{codetemplates.xml :}  Se configure dans :
-				 preferences $\rightarrow$ Java $\rightarrow$Code Style$\rightarrow$Code template
+				 preferences \rightArrow{}Java \rightArrow{}Code Style\rightArrow{}Code template
 
 	\item \textbf{formatter.xml :} Se configure dans :
-				 preferences $\rightarrow$ Java $\rightarrow$Code Style$\rightarrow$Formatter
+				 preferences \rightArrow{} Java \rightArrow{}Code Style\rightArrow{}Formatter
 
 	\item  \textbf{pmd.xml :} Pour tous les projets importés il faut aller dans leurs propriétés  
-		(clique droit sur le projet$\rightarrow$Properties ).
+		(clique droit sur le projet\rightArrow{}Properties ).
 		\begin{enumerate}
 			\item aller dans le menu PMD
 			\item cliquer sur "activer PMD"
@@ -72,7 +72,7 @@ On retrouve cinq fichiers de configuration :
 				\item valider le formulaire.
 				\item définisser la nouvelle configuration comme configuration par défaut (\textbf{Set as Default})
 				\item A présent pour chaque projet importer il faut aller sans sa configuration 
-							(clique droit sur le projet$\rightarrow$Properties )
+							(clique droit sur le projet\rightArrow{}Properties )
 				\item Dans le menu Checkstyle  il faut choisir la configuration  \youTestIt{} et valider le formulaire.
 		\end{enumerate}
 	
@@ -174,17 +174,27 @@ découpage et la possibilité d'exporter les documentations sur différents form
 
 
 Les sources LaTeX sont re-compilées  quotidiennement  via la plateforme d'intégration continue
+
 (\href{http://youtestit.org/jenkins/job/youtestit-documentation/}
-		     {http://youtestit.org/jenkins/job/youtestit-documentation/})
+		     {jenkins})
 
-
+La conversion en HTML est fait via un fork du projet tex Konverter (
+		\href{http://www.texconverter.org}{www.texconverter.org}). La base de ce projet est bien
+conçu, est fonctionne plutôt bien. Cependant certaines fonctionnalité n'étaient pas implémentées,
+comme la gestion des sources, ou des footnote, etc... Nous sommes en cours d'y remédier et
+reverserons une fois le fork terminé. 
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{youtestit-website}	
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Le projet \textbf{
+Le projet Youtestit-website est la partie web présent à l'url \href{http://www.youtestit.org}{www.youtestit.org}.
+A l'heur actuelle le site est constitué de page web statiques, nous étudions la possibilité de les
+remplacer par une solutions de CMS OpenSource (surement basé sur \href{http://www.onehippo.com/en/products/cms}{HippoCMS}). 
+
+
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{youtestit}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+Ce dépôt de source est le principal du projet, c'est lui qui contient les sources du projet.
+L'application \youTestIt{}. 
