@@ -61,3 +61,178 @@
     height: 464px;
     width: 569px;
 }
+
+
+.US01{
+  background: url("images/imgs/US01.png");
+  background-size: 800px auto;
+  width: 800px;
+  height: 150px;
+}
+
+
+.US02{
+  background: url("images/imgs/US02.png");
+  background-size: 800px auto;
+  width: 800px;
+}
+
+.US03{
+  background: url("images/imgs/US03.png");
+  background-size: 600px auto;
+  height: 733px;
+  width: 605px;
+}
+
+.US04{
+  background: url("images/imgs/US04.png");
+  background-size: 800px auto;
+  height: 529px;
+  width: 800px;
+}
+
+.US05{
+  background: url("images/imgs/US05.png");
+  background-size: 800px auto;
+  width: 800px;
+  height: 638px;
+}
+
+.US06{
+  background: url("images/imgs/US06.png");
+  background-size: 300px auto;
+  height: 555px;
+  width: 300px;
+}
+
+.US07{
+  background: url("images/imgs/US07.png");
+  background-size: 800px auto;
+  width: 800px;
+  height: 638px;
+}
+
+.US08{
+  background: url("images/imgs/US08.png");
+  background-size: 300px auto;
+  height: 484px;
+  width: 300px;
+}
+
+.US09{
+  background: url("images/imgs/US09.png");
+  background-size: 150px auto;
+  height: 300px;
+  width: 150px;
+}
+
+.US10{
+  background: url("images/imgs/US10.png");
+  background-size: 800px auto;
+  width: 800px;
+  height: 665px;
+}
+
+.US11{
+  background: url("images/imgs/US11.png");
+  background-size: 150px auto;
+    height: 399px;
+    width: 150px;
+}
+
+.US12, .US13, .US14, .US15,.US16{
+  background-size: 300px auto !important;
+  height: 337px !important;
+  width: 300px !important;  
+}
+
+
+.US12{
+  background: url("images/imgs/US12.png");
+}
+
+.US13{
+  background: url("images/imgs/US13.png");
+}
+
+.US14{
+  background: url("images/imgs/US14.png");
+}
+
+.US15{
+  background: url("images/imgs/US15.png");
+}
+
+.US16{
+  background: url("images/imgs/US16.png");
+}
+
+.US17{
+  background: url("images/imgs/US17.png");
+  background-size: 500px auto;
+  height: 598px;
+  width: 500px;
+}
+
+.US18{
+  background: url("images/imgs/US18.png");
+  background-size: 200px auto;
+  height: 594px;
+  width: 203px;
+}
+
+.US19{
+  background: url("images/imgs/US19.png");
+  background-size: 650px auto;
+  height: 623px;
+  width: 650px;
+}
+
+.US20{
+  background: url("images/imgs/US20.png");
+  background-size: 200px auto;
+  height: 548px;
+  width: 200px;
+}
+
+.US21{
+  background: url("images/imgs/US21.png");
+  background-size: 150px auto;
+  height: 307px;
+  width: 150px;
+}
+
+.US22{
+  background: url("images/imgs/US22.png");
+  background-size: 150px auto;
+  height: 303px;
+  width: 150px;
+}
+
+.US23{
+  background: url("images/imgs/US23.png");
+  background-size: 350px auto;
+  height: 500px;
+  width: 350px;
+}
+
+.US24{
+  background: url("images/imgs/US24.png");
+  background-size: 650px auto;
+  height: 627px;
+  width: 650px;
+}
+
+.US25{
+  background: url("images/imgs/US25.png");
+  background-size: 800px auto;
+  height: 557px;
+  width: 801px;
+}
+
+.US26{
+  background: url("images/imgs/US26.png");
+  background-size: 800px auto;
+  height: 297px;
+  width: 800px;
+}
