@@ -6616,9 +6616,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="259.02504"
-     inkscape:cy="283.22266"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="361.04179"
+     inkscape:cy="297.56957"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -9904,7 +9904,7 @@
      id="layer3"
      inkscape:label="number"
      transform="translate(4.375,6.0625)"
-     style="display:none">
+     style="display:inline">
     <g
        id="g7729"
        transform="translate(44.871453,-52.487915)">
