@@ -14,11 +14,11 @@
    height="559.375"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.47 r22583"
    sodipodi:docname="interface-US02-register.svg"
    inkscape:export-filename="../imgs/interface-US02-register.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-xdpi="171.35196"
+   inkscape:export-ydpi="171.35196">
   <defs
      id="defs4">
     <filter
@@ -353,16 +353,6 @@
        y1="3.0148761"
        x2="10.558969"
        y2="19.285688" />
-    <filter
-       id="filter3976"
-       inkscape:collect="always"
-       color-interpolation-filters="sRGB">
-      <feBlend
-         id="feBlend3978"
-         in2="BackgroundImage"
-         mode="multiply"
-         inkscape:collect="always" />
-    </filter>
     <clipPath
        id="clipPath3613-1"
        clipPathUnits="userSpaceOnUse">
@@ -9256,19 +9246,6 @@
          offset="1"
          id="stop3741-38-46" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-8-1"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-7-6" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-1-0">
@@ -9352,28 +9329,6 @@
          offset="1"
          id="stop3704-7-0" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-2-6">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-57-3" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-21"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-47" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-3-66">
@@ -9409,15 +9364,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-3-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-6-8" />
-    </filter>
     <linearGradient
        id="linearGradient3637-6-84">
       <stop
@@ -9457,15 +9403,6 @@
          offset="1"
          id="stop3704-1-2" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter3174-1-7"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-5-5" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3625-3-4">
@@ -9488,15 +9425,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       inkscape:collect="always"
-       id="filter3657-0-2"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-7-9" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-9-0"
@@ -10279,28 +10207,6 @@
          offset="1"
          id="stop3704-53-4" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-76-16">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-31-4" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-38-4"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-13-45" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-06-3"
@@ -10345,15 +10251,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-96-8">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-04-13" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-56"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -10930,28 +10827,6 @@
          offset="1"
          id="stop3704-24-9" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-78-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-33-8" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-44-7"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-976-3" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-77-5"
@@ -10996,15 +10871,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-7-5">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-06-2" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-16"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -11170,28 +11036,6 @@
          offset="1"
          id="stop3704-81-1" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-65-4">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-79-5" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-7-6"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-45-3" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-99-55"
@@ -11236,15 +11080,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-28-9">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-68-6" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-0"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -26185,28 +26020,6 @@
          offset="1"
          id="stop3704-85-0" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-6-8">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-11-9" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-9-5"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-8-7" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-29-2"
@@ -26251,15 +26064,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-6-6">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-21-3" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-78"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -26340,28 +26144,6 @@
          offset="1"
          id="stop3704-16-4" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-79-2">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-40-8" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-19-8"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-73-1" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3737-1-7"
@@ -26406,15 +26188,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-92-5">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-60-3" />
-    </filter>
     <linearGradient
        y2="7.0165396"
        x2="45.447727"
@@ -26485,28 +26258,6 @@
          offset="1"
          id="stop3704-07-89" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-5-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-90-18" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-03-2"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-97-0" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-5-5">
@@ -26542,15 +26293,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-95-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-29-8" />
-    </filter>
     <linearGradient
        id="linearGradient3183-0-5">
       <stop
@@ -27896,28 +27638,6 @@
          offset="1"
          id="stop3704-98-6" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-16-4">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-39-0" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-4-2"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-6-9" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-172-7">
@@ -27953,15 +27673,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-37-68">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-72-2" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-3"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28042,28 +27753,6 @@
          offset="1"
          id="stop3704-75-4" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-245-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-0-85" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-32-9"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-72-1" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-9-1">
@@ -28099,15 +27788,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-20-8">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-2-6" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-2"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28188,28 +27868,6 @@
          offset="1"
          id="stop3704-77-9" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-3-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-7-5" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-2-2"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-1-8" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-04-58">
@@ -28245,15 +27903,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-2-1">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-1-64" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-75"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28334,28 +27983,6 @@
          offset="1"
          id="stop3704-0-2" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-41-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-1-3" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-5-5"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-93-8" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-0-25">
@@ -28391,15 +28018,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-07-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-63-4" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-7"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28480,28 +28098,6 @@
          offset="1"
          id="stop3704-93-9" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-24-9">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-3-1" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-1-2"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-22-5" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-17-4">
@@ -28537,15 +28133,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-04-2">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-08-7" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-51"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28626,28 +28213,6 @@
          offset="1"
          id="stop3704-9-4" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-7-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-82-4" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-3-1"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-4-9" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-20-66">
@@ -28683,15 +28248,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-9-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-05-4" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-6"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28772,28 +28328,6 @@
          offset="1"
          id="stop3704-8-5" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-29-7">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-9-6" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-0-6"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-2-2" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-2-64">
@@ -28829,15 +28363,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-8-74">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-70-4" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-4"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -28918,28 +28443,6 @@
          offset="1"
          id="stop3704-5-4" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-4-9">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-8-47" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-28-8"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-9-64" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-06">
@@ -28975,15 +28478,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-1-0">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-0-4" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-85"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -29061,19 +28555,6 @@
          offset="1"
          id="stop3741-38-9" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-8-3"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-7-5" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-1-35">
@@ -29324,28 +28805,6 @@
          offset="1"
          id="stop3704-7-56" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3174-2-3">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-57-81" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3794-53"
-       x="-0.192"
-       width="1.3839999"
-       y="-0.192"
-       height="1.3839999">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.28"
-         id="feGaussianBlur3796-44" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3613-3-63">
@@ -29381,15 +28840,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3657-3-31">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-6-3" />
-    </filter>
     <linearGradient
        id="ButtonShadow-0-5"
        gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)"
@@ -29538,15 +28988,6 @@
          offset="1"
          id="stop3704-1-0" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter3174-1-07"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.71"
-         id="feGaussianBlur3176-5-68" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3625-3-9">
@@ -29569,15 +29010,6 @@
          rx="4"
          ry="4" />
     </clipPath>
-    <filter
-       inkscape:collect="always"
-       id="filter3657-0-4"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.14"
-         id="feGaussianBlur3659-7-0" />
-    </filter>
     <linearGradient
        id="linearGradient4081-7">
       <stop
@@ -34699,8 +34131,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="389.2512"
-     inkscape:cy="312.22955"
+     inkscape:cx="323.89456"
+     inkscape:cy="180.43781"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -39083,13 +38515,14 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="number"
-     transform="translate(4.375,6.0625)">
+     transform="translate(4.375,6.0625)"
+     style="display:none">
     <g
        id="g7729"
        transform="translate(155.53366,-54.463834)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39121,7 +38554,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39141,7 +38574,7 @@
        transform="translate(305.03366,-14.463835)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39173,7 +38606,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39193,7 +38626,7 @@
        transform="translate(305.03366,4.5361645)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39225,7 +38658,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39245,7 +38678,7 @@
        transform="translate(305.03366,25.536164)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39277,7 +38710,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39297,7 +38730,7 @@
        transform="translate(305.03366,44.536164)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39329,7 +38762,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39349,7 +38782,7 @@
        transform="translate(305.03366,62.286164)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39381,7 +38814,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39401,7 +38834,7 @@
        transform="translate(305.03366,82.286164)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39433,7 +38866,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39453,7 +38886,7 @@
        transform="translate(394.03365,124.28616)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39485,7 +38918,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
@@ -39505,7 +38938,7 @@
        transform="translate(349.53365,344.78615)">
       <path
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          sodipodi:ry="4.9497476"
          sodipodi:rx="4.9497476"
          sodipodi:cy="176.82104"
@@ -39537,7 +38970,7 @@
          sodipodi:cy="176.82104"
          sodipodi:rx="4.9497476"
          sodipodi:ry="4.9497476"
-         d="m 44.901278,176.82104 c 0,2.73368 -2.216077,4.94975 -4.949748,4.94975 -2.73367,0 -4.949747,-2.21607 -4.949747,-4.94975 0,-2.73367 2.216077,-4.94974 4.949747,-4.94974 2.733671,0 4.949748,2.21607 4.949748,4.94974 z"
+         d="m 44.901278,176.82104 a 4.9497476,4.9497476 0 1 1 -9.899495,0 4.9497476,4.9497476 0 1 1 9.899495,0 z"
          transform="matrix(0.91752047,0,0,0.91752047,30.679712,-21.19504)" />
       <text
          xml:space="preserve"
