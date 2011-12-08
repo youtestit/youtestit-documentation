@@ -198,3 +198,20 @@ remplacer par une solutions de CMS OpenSource (surement basé sur \href{http://w
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Ce dépôt de source est le principal du projet, c'est lui qui contient les sources du projet.
 L'application \youTestIt{}. 
+
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Datasource : base de données}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\lstsetSql{}
+\lstinputlisting{includes/src/postgresCreate.sql}
+
+\lstsetXml{}
+\lstinputlisting{includes/src/datasource.xml}
+
+
+jdbc:postgresql://localhost:5432/youtestit
+login/password
