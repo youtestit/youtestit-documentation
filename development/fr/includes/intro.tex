@@ -6,71 +6,70 @@
 
 \section{Le but du projet}
 
-L'intégration continue est un point très important dans le développement d'application pour limité
-les bugs. On améliore ainsi la qualité des projets et facilite grandement les livraisons. 
+L'intégration continue est un point très important dans le développement d'application. Elle permet de limiter
+les bugs. On améliore ainsi la qualité des projets et l'on facilite grandement les livraisons. 
 
 \youTestIt{} fait partie des outils d'intégration continue, en permettant de tester les actions que les
-utilisateurs feront sur l'application. Il permet de gérer les campagnes de tests ainsi que de l'automatiser.
-L'automatisation des tests se fait via Selenium \footnote{Selenium est un outils permettant l'écriture et
+utilisateurs feront sur l'application. Il permet de gérer les campagnes de tests et permet de les automatiser.
+L'automatisation des tests se fait via Selenium \footnote{Selenium est un outil permettant l'écriture et
 l’exécution de tests sur un navigateur web}. 
 
 
-\youTestIt{}  est une application WEB, cela permettant un déploient simplifier et un travail en équipe bien
+\youTestIt{}  est une application WEB, cela permet un déploiment simplifié et un travail en équipe bien
 plus simple. La création et la maintenance des tests Selenium peut rapidement devenir très complexe,
-il est nécessaire d'avoir un outils facilitant ce processus.
+il est nécessaire d'avoir un outil facilitant ce processus.
 
 \youTestIt{} a deux objectifs principaux :
 \begin{itemize}
-	\item Facilité la création et maintenance des tests Selenium  en apportant une approche fonctionnelle.
-	\item D'aider à mesurer la qualité d'un projet.
+	\item Faciliter la création et la maintenance des tests Selenium  en apportant une approche fonctionnelle.
+	\item Aider à mesurer la qualité d'un projet.
 \end{itemize}
 
 
 
-Les clients sont rarement des développeurs expérimenter, ils ont besoin d'un outils
-qui leurs permettent de concevoir des tests d'un point de vue fonctionnel, et ceux
-sans que les contraintes techniques ne freinent leurs taches. 
+Les clients sont rarement des développeurs expérimentés, ils ont besoin d'un outil
+qui leur permette de concevoir des tests d'un point de vue fonctionnel, et ce
+sans que les contraintes techniques ne freinent leurs tâches. 
 
-Cette outils permet également d'améliorer la relation cliente, en les faisant participer
-à la vie du projet (descriptions et conceptions de tests Selenium), ou en leurs donnant 
+Cet outil permet également d'améliorer la relation cliente, en les faisant participer
+à la vie du projet (descriptions et conceptions de tests Selenium), ou en leur donnant 
 une meilleure vision de l'évolution de la qualité de leurs projets. 
 
-Un point qui est souvent complexe et couteux en temps est le fait de tester un projet 
-sur les différents navigateurs cibles.  Le fait d'avoir un outils qui est capable d'exécuter
-des tests sur différents plateformes avec une configuration simple est un réel avantage.
+le fait de tester un projet 
+sur les différents navigateurs cibles est souvent complexe et couteux en temps.  Le fait d'avoir un outil capable d'exécuter
+des tests sur différentes plateformes avec une configuration simple est un réel avantage.
 Selenium permet de lancer des tests sur différents systèmes d'exploitations et navigateurs, 
 cependant la configuration n'est pas simple pour des personnes n'ayant pas des notions 
 d'administration système. 
 
 La parallélisation des calculs est également un point important.  Un test Selenium prend du 
 temps à s'exécuter. Imaginons que l'on ait  beaucoup de tests avec différents navigateurs, le
-temps nécessaire sera conséquent. En distribuant les calculs sur différents machines, le temps
+temps nécessaire sera conséquent. En distribuant les calculs sur différentes machines, le temps
 nécessaire pour effectuer l'ensemble de ces tests sera considérablement réduit. 
 
 \begin{description}
 	\item \positif{}
-	  Approche fonctionnelle des tests Selenium, ne nécessite pas de connaissant approfondie en développement.
+	  Approche fonctionnelle des tests Selenium, ne nécessite pas de connaissances approfondies en développement.
 	\item \positif{}  Gestion des tests Selenium simplifié.
 	\item \positif{}  Tests sur différents environnements plus simple à configurer.
 	\item \positif{}  Meilleur vision de l'évolution de la qualité d'un projet (statistiques plus complètes).
-	\item \positif{}  Évite les régressions, extrêmement important dans le cadres de TMA.
-	\item \positif{}  Améliore la relation clients (participation à la création des tests et ou meilleur vision de la qualité du projet)
+	\item \positif{}  Évite les régressions, extrêmement important dans le cadre d'une TMA.
+	\item \positif{}  Améliore la relation client (participation à la création des tests et ou meilleure vision de la qualité du projet)
 \end{description}
 
 
 %===============================================================================
-% Qu'est-ce que Selenium
+% Qu'est-ce que Selenium ?
 %===============================================================================
-\section{Qu'est-ce que Selenium}
-Pour comprendre d'avantage le fonctionnement de \youTestIt{}, il faut comprendre qu'est-ce que
-c'est que les tests Selenium.
+\section{Qu'est-ce que Selenium ?}
+Pour comprendre d'avantage le fonctionnement de \youTestIt{}, il faut comprendre les tests Selenium.
 
-Selenium est un outils qui permet d'effectuer des tests sur l'interface d'une application Web. Il 
+Selenium est un outil qui permet d'effectuer des tests sur l'interface graphique d'une application Web. Il 
 est divisé en deux parties :
 
 \textbf{Selenium IDE}
 
-		C'est un plugin pour Firefox permettant de concevoir les tests. Lors qu'Il est actif il enregistre
+		C'est un plugin pour Firefox permettant de concevoir les tests. Lors qu'il est actif, il enregistre
 		les différentes actions que réalise un utilisateur sur le navigateur.
 		\begin{figure}[!h]
      		\begin{center}
@@ -87,7 +86,7 @@ est divisé en deux parties :
 		Selenium RC permet d'exécuter des tests Selenium en dehors du plugin firefox. C'est une
 		application Java à l'intérieur d'un serveur Jetty qui interprète les différentes commandes Selenium.
 		Dans une plateforme d'intégration continue c'est Selenium RC qui est chargé d'effectuer les tests.
-		Selenium RC permet également de distribuer l'exécutions des tests sur divers machines. Cependant
+		Selenium RC permet également de distribuer l'exécution des tests sur divers machines. Cependant
 		la configuration du Hub\footnote{Le Hub Selenium est le serveur Selenium RC principal dédié à la gestion
 		des autres machines.} et des différents nodes\footnote{Les différentes machines liées au Hub Selenium sont
 		nommées nodes, ou nœud en français.} se fait en ligne de commandes. Cela demande donc quelques notions
@@ -103,6 +102,6 @@ est divisé en deux parties :
  		
 
 
-Ces outils permettent une première approche vis à vis des tests d'intégration. Leurs intégrations n'est pas simple, elle nécessite une bonne connaissance en Maven\footnote{Maven est une application gérant la compilation d'application Java} et
-en administration système. 
+Ces outils permettent une première approche vis à vis des tests d'intégration. Leur intégration n'est pas simple, elle nécessite une bonne connaissance en Maven\footnote{Maven est une application gérant la compilation d'application Java} et
+de l'administration système. 
 

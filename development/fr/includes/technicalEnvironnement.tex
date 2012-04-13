@@ -8,9 +8,9 @@
 \section{Eclipse - indigo}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Le développement de \youTestIt{} est réalisé sous eclipse avec différents plugins afin de standardiser 
-le code. Il est préférable pour toutes contributions d'utiliser un environnement similaires.
+le code. Pour toutes contributions, il est préférable  d'utiliser un environnement similaire.
 
-La version utiliser doit être une version supérieur ou égale à \textbf{indigo}. 
+La version utilisée doit être une version supérieure ou égale à \textbf{indigo}. 
 
 Liste des plugins :
 \begin{itemize}
@@ -18,43 +18,43 @@ Liste des plugins :
 				Le plugin est présent sur le marcket place d'eclipse.
 				
 	\item Maven Integration for Eclipse : pour la gestion des dépendances.
-					Le plugin est présent sur le marcket place d'eclipse.
+					Le plugin est présent sur le marketplace d'eclipse.
 					
 	\item EGit : pour la gestion des sources sous GitHub
-					Le plugin est présent sur le marcket place d'eclipse.
+					Le plugin est présent sur le marketplace d'eclipse.
 					
 	\item PMD : pour la vérification du code
 					Le plugin s'installe via l'adresse \textbf{http://pmd.sourceforge.net/eclipse } à rajouter dans 
-					le menu software update d'eclipse.
+					Help \rightArrow{} Install new software
 					
-	\item Check style : pour la vérification du code
-					Le plugin est présent sur le marcket place d'eclipse.
+	\item Check style : pour la vérification du code.
+					Le plugin est présent sur le marketplace d'eclipse.
 					
-	\item Grep Console : non obligatoire, mais facilite la lecture de la console
-					Le plugin est présent sur le marcket place d'eclipse.
+	\item Grep Console : non obligatoire, mais facilite la lecture de la console.
+					Le plugin est présent sur le marketplace d'eclipse.
 \end{itemize}
 
 \paragraph{Formatage du code :}
 Il est très important de configurer eclipse avec les différents fichiers de formatages
-présent dans le projet. 
+présents dans le projet. 
 
-On retrouve cinq fichiers de configuration :
+On retrouve cinq fichiers de configuration présents dans /youtestit/youtestit-code-format:
 \begin{itemize}
-	\item  \textbf{cleanups.xml :}  Se configure dans : ((\leftArrow{}))
-				  preferences \rightArrow{} Java \rightArrow{}Code Style\rightArrow{}Clean up
+	\item  \textbf{cleanups.xml :}  Se configure dans : Window \rightArrow{}
+				  preferences \rightArrow{} Java \rightArrow{} Code Style \rightArrow{} Clean up
 
-	\item \textbf{codetemplates.xml :}  Se configure dans :
-				 preferences \rightArrow{}Java \rightArrow{}Code Style\rightArrow{}Code template
+	\item \textbf{codetemplates.xml :}  Se configure dans : Window \rightArrow{}
+				 preferences \rightArrow{} Java \rightArrow{} Code Style \rightArrow{} Code template
 
-	\item \textbf{formatter.xml :} Se configure dans :
-				 preferences \rightArrow{} Java \rightArrow{}Code Style\rightArrow{}Formatter
+	\item \textbf{formatter.xml :} Se configure dans : Window \rightArrow{}
+				 preferences \rightArrow{} Java \rightArrow{} Code Style \rightArrow{} Formatter
 
 	\item  \textbf{pmd.xml :} Pour tous les projets importés il faut aller dans leurs propriétés  
-		(clique droit sur le projet\rightArrow{}Properties ).
+		(clique droit sur le projet \rightArrow{} Properties ).
 		\begin{enumerate}
 			\item aller dans le menu PMD
 			\item cliquer sur "activer PMD"
-			\item il faut en suite cliquer sur \emph{Utiliser l'ensemble des règles configuré dans un fichier projet}
+			\item il faut ensuite cliquer sur \emph{Utiliser l'ensemble des règles configurées dans un fichier projet}
 			\item cliquer sur parcourir pour rechercher le fichier de configuration du projet.
 			\item valider le formulaire.
 		\end{enumerate}
@@ -70,9 +70,9 @@ On retrouve cinq fichiers de configuration :
 				\item donner un nom à la configuration
 				\item cliquer sur \textbf{Browse...} pour aller rechercher le fichier checkstyle.xml du projet \youTestIt{}.
 				\item valider le formulaire.
-				\item définisser la nouvelle configuration comme configuration par défaut (\textbf{Set as Default})
-				\item A présent pour chaque projet importer il faut aller sans sa configuration 
-							(clique droit sur le projet\rightArrow{}Properties )
+				\item définir la nouvelle configuration comme configuration par défaut (\textbf{Set as Default})
+				\item A présent pour chaque projet importé il faut aller sans sa configuration 
+							(clique droit sur le projet \rightArrow{} Properties )
 				\item Dans le menu Checkstyle  il faut choisir la configuration  \youTestIt{} et valider le formulaire.
 		\end{enumerate}
 	
@@ -80,7 +80,7 @@ On retrouve cinq fichiers de configuration :
 	\paragraph{}	
 	
 	\begin{attention}
-		Toute contribution ne respectant pas les conventions de formatage ne sera pas prit en compte.
+		Toute contribution ne respectant pas les conventions de formatage ne sera pas pris en compte.
 	\end{attention}
 	
 \end{itemize}
@@ -88,19 +88,19 @@ On retrouve cinq fichiers de configuration :
 \section{GitHub}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 L'ensemble du code source du projet se trouve sur GitHub. Pour pouvoir contribuer il est
-nécessaire d’être inscrit sur le site.  Une fois inscrit il faut crée et uploader sa clé RSA, pour cela il faut suivre le tutoriel proposé 
+nécessaire d’être inscrit sur le site.  Une fois inscrit, il faut créer et uploader sa clé RSA, pour cela il faut suivre le tutoriel proposé 
 par GitHub : \href{http://help.github.com/linux-set-up-git/ }{http://help.github.com/linux-set-up-git}. 
 
-une fois le compte gitHub configuré, il suffit de faire une demande d'ajout par mail à l'adresse
+Une fois le compte gitHub configuré, il suffit de faire une demande d'ajout par mail à l'adresse
 \textbf{administrator@youtestit.org}, pour que l'on vous rajoute au projet.
 
 \subsection{Configuration eclipse pour GitHub}
-Une fois ajouter sur le projet  vous pouvez récupérer les sources et commencer à contribuer. 
+Une fois ajouté sur le projet  vous pouvez récupérer les sources et commencer à contribuer. 
 Mais avant cela il faut encore configurer eclispe pour avoir un environnement de développement
 fonctionnel. 
 
 \begin{enumerate}
-	\item créer un dossier dans votre home (par exemple : /home/yourLogin/git ). Ce dossier contiendra
+	\item Créez un dossier dans votre home (par exemple : /home/yourLogin/git ). Ce dossier contiendra
 	 l'ensemble des sources du projet.
 	 
 	\item Il faut ensuite cloner tous les projets dans ce dossier
@@ -108,7 +108,7 @@ fonctionnel.
 	 \lstinputlisting{includes/src/gitClone.sh}
 	 
 	 \item Le plugin EGit fonctionne très mal avec la librairie SSH d'eclipse, il faut impérativement lui
-	 ordonner de travailler avec la librairie système. Pour cela il faut  crée un script shell pour le lancement
+	 ordonner de travailler avec la librairie système. Pour cela il faut créer un script shell pour le lancement
 	 d'éclispe qui va initialiser les bonnes variables d'environnement.
 	 
 	 \lstsetSh{}
@@ -116,7 +116,7 @@ fonctionnel.
 	On en profite également pour spécifier l'emplacement de maven et du JDK.
 	\newpage
 
-	 \item Une fois eclipse démarrer on va pouvoir récupérer nos dépôt git. Dans la perspective
+	 \item Une fois eclipse démarré on va pouvoir récupérer nos dépôts git. Dans la perspective
 	 Git repository exploring, on peut rajouter un dépôt en cliquant sur l'icone avec un + vert.
 		\begin{figure}[!h]
      		\begin{center}
@@ -126,13 +126,13 @@ fonctionnel.
 		    \end{center}
 		\end{figure}
 		
-	 \item Une nouvelle fenêtre s'ouvre dans la quel on va pouvoir aller chercher  l'emplacement du
-	 dépôt Git locale. Le bouton "seach" permet au plugin d'aller récupérer le .git du dépôt. Il ne 
+	 \item Une nouvelle fenêtre s'ouvre dans laquelle on va pouvoir aller chercher  l'emplacement du
+	 dépôt Git local. Le bouton "search" permet au plugin d'aller récupérer le .git du dépôt. Il ne 
 	 reste plus qu'à valider le formulaire.
 		\begin{figure}[!h]
      		\begin{center}
 			      \includegraphics[width=0.5\textwidth]{gitRepo}
-			      \caption{Récupération des dépôt Git}
+			      \caption{Récupération des dépôts Git}
 			      \label{gitAddRepo}
 		    \end{center}
 		\end{figure}
@@ -149,8 +149,8 @@ fonctionnel.
 		    \end{center}
 		\end{figure}		 
 	 
-	\item Une fois la configuration terminée, vous pouvez importer les projets en tant que "general project" .
-	Pour cela il suffit de déplier le dépôt et de faire un clique droit sur le "Working directory" .
+	\item Une fois la configuration terminée, vous pouvez importer les projets en tant que "general project".
+	Pour cela il suffit de déplier le dépôt et de faire un clic droit sur le "Working directory".
 		\begin{figure}[!h]
      		\begin{center}
 			      \includegraphics[width=0.5\textwidth]{importProject}
@@ -159,7 +159,7 @@ fonctionnel.
 		    \end{center}
 		\end{figure}	
 		
-	\item Votre environnement est prêt à faire de pull et push ;)   Pour plus  d'information je vous invite à lire la
+	\item Votre environnement est prêt à faire du pull et du push ;)   Pour plus  d'informations, je vous invite à lire la
 	documentation du plugin Egit : \href{http://wiki.eclipse.org/EGit/User\_Guide}{http://wiki.eclipse.org/EGit/User\_Guide} . 
  
 	 
@@ -169,35 +169,30 @@ fonctionnel.
 \section{youtestit-documentation}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Le projet \textbf{youtestit-documentation} est celui qui contient l'ensemble de la documentation
-technique et fonctionnel. Les différents fichiers sont écris en LaTeX afin de permettre un meilleur
-découpage et la possibilité d'exporter les documentations sur différents formats (PDF, html, text brut).
+technique et fonctionnelle. Les différents fichiers sont écrits en LaTeX afin de permettre un meilleur
+découpage et la possibilité d'exporter les documentations dans différents formats (PDF, html, text brut).
 
 
-Les sources LaTeX sont re-compilées  quotidiennement  via la plateforme d'intégration continue
+Les sources LaTeX sont re-compilées  quotidiennement  via la plateforme d'intégration continue (\href{http://youtestit.org/jenkins/job/youtestit-documentation/}{jenkins}).
 
-(\href{http://youtestit.org/jenkins/job/youtestit-documentation/}
-		     {jenkins})
-
-La conversion en HTML est fait via un fork du projet tex Konverter (
-		\href{http://www.texconverter.org}{www.texconverter.org}). La base de ce projet est bien
-conçu, est fonctionne plutôt bien. Cependant certaines fonctionnalité n'étaient pas implémentées,
-comme la gestion des sources, ou des footnote, etc... Nous sommes en cours d'y remédier et
-reverserons une fois le fork terminé. 
+La conversion en HTML est faite via un fork du projet tex Konverter (\href{http://www.texconverter.org}{www.texconverter.org}). La base de ce projet est bien
+conçue et fonctionne plutôt bien. Cependant certaines fonctionnalités n'étaient pas implémentées,
+comme la gestion des sources, ou des footnote, etc... Nous sommes en train d'y remédier et nous
+reverserons notre contribution une fois le fork terminé. 
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{youtestit-website}	
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Le projet Youtestit-website est la partie web présent à l'url \href{http://www.youtestit.org}{www.youtestit.org}.
-A l'heur actuelle le site est constitué de page web statiques, nous étudions la possibilité de les
-remplacer par une solutions de CMS OpenSource (surement basé sur \href{http://www.onehippo.com/en/products/cms}{HippoCMS}). 
+Le projet Youtestit-website est la partie web présente à l'url \href{http://www.youtestit.org}{www.youtestit.org}.
+A l'heure actuelle le site est constitué de pages web statiques. Nous étudions la possibilité de les
+remplacer par une solution de CMS OpenSource (surement basée sur \href{http://www.onehippo.com/en/products/cms}{HippoCMS}). 
 
 
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{youtestit}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Ce dépôt de source est le principal du projet, c'est lui qui contient les sources du projet.
-L'application \youTestIt{}. 
+C'est le dépôt principal du projet, c'est lui qui contient les sources du projet \youTestIt{}. 
 
 
 
