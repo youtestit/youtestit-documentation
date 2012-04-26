@@ -1,0 +1,4 @@
+Placez vous dans le dossier youtestit-documentation/development/fr/ puis exécuter ces commandes :
+
+make clean
+make

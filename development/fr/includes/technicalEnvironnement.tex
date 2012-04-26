@@ -166,6 +166,38 @@ fonctionnel.
 \end{enumerate}
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{PostgreSQL 9.1}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\subsection{Installation}
+\begin{enumerate}
+	\item Télécharger les binaires à cette adresse : http://www.postgresql.org/download/
+
+	\item Les procédures d'installation sur Linux sont disponibles à cette adresse http://www.openscg.com/se/postgresql/packages.jsp
+
+	\item N'oubliez pas d'ajouter /opt/postgres/9.1/bin au \$PATH
+
+	\item Téléchargez postgresql-9.1-901.jdbc4.jar à cette adresse http://www.jarvana.com/jarvana/archive-details/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar 
+et collez le dans ce dossier <chemin_vers_jboss>/standalone/deployments/
+
+	\item Collez le bloc qui suit après la ligne 107 du fichier <chemin_vers_jboss>/standalone/configuration/standalone.xml 
+	 \lstsetSh{}
+	 \lstinputlisting{includes/src/datasource.xml}
+	
+\end{enumerate}
+
+\subsection{Configuration}
+\begin{enumerate}
+	\item Une fois le serveur PostgreSQL démarré, connectez vous en tant qu'utilisateur \textbf{postgres} et importez le script initialisant la base de données :
+	 \lstsetSh{}
+	 \lstinputlisting{includes/src/postgreSQL.sh}
+
+	\item Retournez sur Eclipse et exécutez le script Ant \textbf{pdeploy} du projet youtestit.
+
+	\item Vous pouvez démarrer votre serveur JBoss et vous rendre à l'adresse suivante : http://localhost:8080/youtestit
+\end{enumerate}
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{youtestit-documentation}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Le projet \textbf{youtestit-documentation} est celui qui contient l'ensemble de la documentation
@@ -197,16 +229,16 @@ C'est le dépôt principal du projet, c'est lui qui contient les sources du proj
 
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Datasource : base de données}
+%\section{Datasource : base de données}
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-\lstsetSql{}
-\lstinputlisting{includes/src/postgresCreate.sql}
+%\lstsetSql{}
+%\lstinputlisting{includes/src/postgresCreate.sql}
 
-\lstsetXml{}
-\lstinputlisting{includes/src/datasource.xml}
+%\lstsetXml{}
+%\lstinputlisting{includes/src/datasource.xml}
 
 
-jdbc:postgresql://localhost:5432/youtestit
-login/password
+%jdbc:postgresql://localhost:5432/youtestit
+%login/password

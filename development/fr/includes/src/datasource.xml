@@ -1,0 +1,16 @@
+<datasource jndi-name="java:/youtestit" pool-name="youtestit_Pool" enabled="true" jta="true" use-java-context="true" use-ccm="true">
+    <connection-url>
+        jdbc:postgresql://localhost/youtestit
+    </connection-url>
+    <driver>
+        postgresql-9.1-901.jdbc4.jar
+    </driver>
+    <security>
+        <user-name>
+            youtestit
+        </user-name>
+        <password>
+            password
+        </password>
+    </security>
+</datasource>
